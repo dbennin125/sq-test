@@ -1,4 +1,4 @@
 import db from './lib/utils/db.js';
-// import setup from './data/setup.js';
+import app from './lib/app.js';
 
-db.sync();
+db.sync({ force: true });
